@@ -1,0 +1,7 @@
+- name: inventory variables
+  hosts: local
+  connection: local
+  tasks:
+    - name: inventory  variables
+      ansible.builtin.debug:
+        msg: "i am {{ NAME }},i am from {{ FROM }}"  
