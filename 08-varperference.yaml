@@ -8,7 +8,7 @@
     - vars.yaml
   vars_prompt:
     - name: NAME
-      prompt: variable form true
+      prompt: variable form prompt
       private: false
   tasks:
   - name: variable perference
