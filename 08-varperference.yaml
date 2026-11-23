@@ -1,0 +1,17 @@
+- name: variable perference
+  connection: local
+  hosts: local
+  vars:
+    NAME: variable form play
+  vars_file:
+    - vars.file
+  vars_prompt:
+    NAME: name
+    propt: variable form true
+    private: false
+  tasks:
+  - name: variable perference
+    vars:
+    NAME: variable form task
+    ansible.builtin.debug:
+      msg: "hi i am from {{ NAME }}"  
