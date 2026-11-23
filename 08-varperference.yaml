@@ -6,10 +6,10 @@
     NAME: variable form play
   #vars_files:
    # - vars.yaml
-  vars_prompt:
-    - name: NAME
-      prompt: variable form prompt
-      private: false
+  #vars_prompt:
+  #  - name: NAME
+   #   prompt: variable form prompt
+    #  private: false
   tasks:
   - name: variable perference
    # vars:
