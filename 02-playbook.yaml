@@ -1,0 +1,10 @@
+- name: playlevel
+  hosts: local
+  connection: local
+  vars:
+    NAME: "MALLI ARUNKUMAR"
+    FROM: "AP"
+  tasks:
+    - name: playlevel variables
+      ansible.builtin.debug:
+       msg: "i am {{ NAME }},i am from {{ FROM }}"  
