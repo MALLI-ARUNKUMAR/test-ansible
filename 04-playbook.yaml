@@ -1,0 +1,9 @@
+- name: playlevel
+  hosts: local
+  connection: local
+  vars:
+    - vars.yaml
+  tasks:
+    - name: playlevel variables
+      ansible.builtin.debug:
+        msg: "i am {{ NAME }},i am from {{ FROM }}" 
