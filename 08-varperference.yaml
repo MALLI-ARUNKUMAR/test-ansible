@@ -5,7 +5,7 @@
   vars:
     NAME: variable form play
   vars_files:
-    - vars.file
+    - vars.yaml
   vars_prompt:
     - name: NAME
       prompt: variable form true
