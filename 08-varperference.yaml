@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   
-  vars:
-    NAME: variable form play
+  #vars:
+   # NAME: variable form play
   #vars_files:
    # - vars.yaml
   #vars_prompt:
