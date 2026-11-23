@@ -7,7 +7,7 @@
   vars_files:
     - vars.file
   vars_prompt:
-    - name: name
+    - name: NAME
       propt: variable form true
       private: false
   tasks:
