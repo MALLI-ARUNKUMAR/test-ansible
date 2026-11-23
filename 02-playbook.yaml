@@ -7,4 +7,4 @@
   tasks:
     - name: playlevel variables
       ansible.builtin.debug:
-       msg: "i am {{ NAME }},i am from {{ FROM }}"  
+        msg: "i am {{ NAME }},i am from {{ FROM }}"  
