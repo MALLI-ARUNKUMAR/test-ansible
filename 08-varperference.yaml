@@ -1,6 +1,7 @@
 - name: variable perference
-  connection: local
   hosts: local
+  connection: local
+  
   vars:
     NAME: variable form play
   vars_file:
