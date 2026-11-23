@@ -4,8 +4,8 @@
   
   vars:
     NAME: variable form play
-  vars_files:
-    - vars.yaml
+  #vars_files:
+   # - vars.yaml
   vars_prompt:
     - name: NAME
       prompt: variable form prompt
