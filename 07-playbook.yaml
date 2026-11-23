@@ -4,4 +4,4 @@
   tasks:
     - name: print the vars from args
       ansible.builtin.debug:
-       mag: "my name is {{ god }}"
+        mag: "my name is {{ god }}"
