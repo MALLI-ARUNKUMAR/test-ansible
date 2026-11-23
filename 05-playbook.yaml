@@ -11,4 +11,4 @@
   tasks:
     - name: playlevel variables
       ansible.builtin.debug:
-        msg: "enter username :{{ username }},password is :{{ password }}"  
+        msg: "enter username :{{ username }}"  
