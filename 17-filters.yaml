@@ -3,7 +3,7 @@
   hosts: local
   vars:
     topics: linux,shell,ansible,terraform
-  tags:
+  tags_map:
     name: ansible
     project: roboshop
     component: mongodb  
@@ -13,4 +13,4 @@
       msg: "{{ topics | split(',') }}"
   - name: converting the map to list
     ansible.builtin.debug:
-      msg: "{{ tags | dict2items }}"    
+      msg: "{{ tags_map | dict2items }}"    
