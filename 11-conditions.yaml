@@ -1,0 +1,7 @@
+- name: gathering facts
+  connections: local
+  hosts: local
+  tasks:
+  - name: gathering facts
+    ansible.builtin.debug:
+      msg: "{{ gathering_fats }}"
