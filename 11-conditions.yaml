@@ -9,4 +9,4 @@
   - name: check redhat or not
     ansible.builtin.debug:
       msg: "yes it is redhat"
-    when: os_family == "RedHat"      
+    when: ansible_facts.os_family == "RedHat"      
