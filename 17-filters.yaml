@@ -6,4 +6,4 @@
   tasks:
   - name: converting the string to list
     ansible.builtin.debug:
-      msg: " {{ topics | split(',') }}"
+      msg: "{{ topics | split(',') }}"
