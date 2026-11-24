@@ -10,4 +10,4 @@
   tasks:
   - name: converting the string to list
     ansible.builtin.debug:
-      msg: "{{ tags | dict2items }}"
+      msg: "{{ topics | split(',') }}"
