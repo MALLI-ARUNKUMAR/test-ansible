@@ -12,11 +12,11 @@
       - shell
       - ansible
   tasks:
-    name: datatypes
-    ansible.builtin.debug:
-      msg: |
-      program: {{ PROGRAM }}  
-      duration: {{ DURATION }}
-      is_live: {{ IS_LIVE }}
-      details: {{ DETAILS }}
-      topics: {{ TOPICS }}
+   -   name: datatypes
+       ansible.builtin.debug:
+        msg: |
+          program: {{ PROGRAM }}  
+          duration: {{ DURATION }}
+          is_live: {{ IS_LIVE }}
+          details: {{ DETAILS }}
+          topics: {{ TOPICS }}
