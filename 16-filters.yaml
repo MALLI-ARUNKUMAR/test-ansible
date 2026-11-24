@@ -4,5 +4,5 @@
   tasks:
   - name: filters
     ansible.builtin.debug:
-      msg: "hi , {{ calling the username  | default ('arunkumar') }}"
+      msg: "hi , {{ username  | default ('arunkumar') }}"
   
