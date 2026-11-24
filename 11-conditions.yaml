@@ -6,3 +6,7 @@
   - name: gathering facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+  - name: check redhat or not
+    ansible.builtin.debug:
+      msg: "yes it is redhat"
+    when: os_family == "RedHat"      
