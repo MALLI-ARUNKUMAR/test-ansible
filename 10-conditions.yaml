@@ -1,0 +1,10 @@
+- name: condition
+  hosts: local
+  connection: local
+  vars:
+    number:7
+  tasks:
+  - name: conditions
+    ansible.builtin.debug:
+      msg: " my name is arunkumar"  
+    when: number > 5  
