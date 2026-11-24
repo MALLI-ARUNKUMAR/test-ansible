@@ -1,5 +1,5 @@
 - name: gathering facts
-  connections: local
+  connection: local
   hosts: local
   tasks:
   - name: gathering facts
