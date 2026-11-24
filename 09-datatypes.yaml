@@ -1,0 +1,22 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "devops with aws"
+    DURATION: 140
+    IS_LIVE: true
+    DETAILS:
+      MONTHS: 4
+    TOPICS:
+      - linux
+      - shell
+      - ansible
+  tasks:
+    name: datatypes
+    ansible.builtin.debug:
+      msg: |
+      program: {{ PROGRAM }}  
+      duration: {{ DURATION }}
+      is_live: {{ IS_LIVE }}
+      details: {{ DETAILS }}
+      topics: {{ TOPICS }}
