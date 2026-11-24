@@ -6,5 +6,5 @@
   tasks:
   - name: conditions
     ansible.builtin.debug:
-      msg: " my name is arunkumar"  
+      msg: " given number is grater than 5"  
     when: number > 5  
