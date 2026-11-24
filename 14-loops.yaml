@@ -4,8 +4,8 @@
   tasks:
   - name: loops
     ansible.builtin.debug:
-      msg: " {{ item }}"
-    state: present
+      msg: "{{ item }}"
+      state: present
     loop:
     - nginx
     - mysql
