@@ -4,8 +4,8 @@
   tasks:
   - name: test the shell and command 
     ansible.builtin.shell: cat /etc/passwd | grep root
-    register: user_root
+    register: user
     
   - name: print output
     ansible.builtin.debug:
-      msg: "{{ user-root }}"  
+      msg: "{{ user }}"  
