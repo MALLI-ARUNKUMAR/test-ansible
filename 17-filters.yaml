@@ -4,6 +4,6 @@
   vars:
     topics: linux,shell,ansible,terraform
   tasks:
-  - name: filters
+  - name: converting the string to list
     ansible.builtin.debug:
       msg: " {{ topics | split(',') }}"
