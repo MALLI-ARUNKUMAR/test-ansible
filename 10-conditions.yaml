@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    number:7
+    number: 7
   tasks:
   - name: conditions
     ansible.builtin.debug:
