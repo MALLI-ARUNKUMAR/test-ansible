@@ -3,10 +3,10 @@
   hosts: local
   vars:
     topics: linux,shell,ansible,terraform
-  tags:
-    name: ansible
-    project: roboshop
-    component: mongodb  
+  #tags:
+   # name: ansible
+    #project: roboshop
+    #component: mongodb  
   tasks:
   - name: converting the string to list
     ansible.builtin.debug:
