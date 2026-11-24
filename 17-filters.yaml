@@ -1,0 +1,9 @@
+- name: filters
+  connection: local
+  hosts: local
+  vars:
+    topics: linux,shell,ansible,terraform
+  tasks:
+  - name: filters
+    ansible.builtin.debug:
+      msg: " {{ topics }}"
