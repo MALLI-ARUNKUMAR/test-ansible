@@ -3,11 +3,14 @@
   hosts: local
   vars:
     topics: linux,shell,ansible,terraform
-  #tags:
-   # name: ansible
-    #project: roboshop
-    #component: mongodb  
+  tags:
+    name: ansible
+    project: roboshop
+    component: mongodb  
   tasks:
   - name: converting the string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+  - name: converting the map to list
+    ansible.builtin.debug:
+      msg: "{{ tags | dict2items }}"    
