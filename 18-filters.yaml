@@ -1,0 +1,35 @@
+- name: filters
+  connection: local
+  hosts: local
+  vars:
+    topics: linux,shell,ansible,terraform
+    my_tags:
+      name: ansible
+      project: roboshop
+      component: mongodb 
+    my_listtages:
+       [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "mongodb"
+        }
+    ]
+   
+  tasks:
+  - name: converting the string to list
+    ansible.builtin.debug:
+      msg: "{{ topics | split(',') }}"
+  - name: converting the map to list
+    ansible.builtin.debug:
+      msg: "{{ my_tags | dict2items }}" 
+  - name: converting the  list to map
+    ansible.builtin.debug:
+      msg: "{{ my_listtages | items2dict }}"        
