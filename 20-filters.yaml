@@ -1,0 +1,9 @@
+- name: converting to upper case
+  hosts: local
+  connection: local
+  vars:
+    cource: ARUNKUMAR
+  tasks:
+  - name: converting to uppercase
+    ansible.builtin.debug:
+      msg: "{{ cource | lower }}"
