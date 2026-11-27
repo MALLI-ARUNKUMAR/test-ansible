@@ -1,6 +1,6 @@
 - name: to check ipv4 or not
   vars:
-    my_ip: 192.168.12.275
+    my_ip: 192.168.12.200
   connection: local
   hosts: local
   tasks: 
