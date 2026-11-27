@@ -1,0 +1,8 @@
+- name: checing the idenmpotent
+  connection: local
+  hosts: local
+  become: yes
+  tasks:
+  - name: creating the user
+    ansible.builtin.user:
+     name: ankaiah
